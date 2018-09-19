@@ -11,7 +11,7 @@ namespace Mosh
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new RelativeLayoutEx1();
         }
 
         protected override void OnStart()
