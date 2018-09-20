@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="Black"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mosh.ImageExercise">
+    <AbsoluteLayout>
+        <Button Image="left.png"
+                Clicked="previous_Clicked"
+                AbsoluteLayout.LayoutBounds="0.05, 0.05, 0.2, 0.2"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Black"
+                TextColor="White"
+                HeightRequest="100"
+                />
+        <ActivityIndicator Color="White"
+                 IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.05, 100, 100"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Button Image="right.png"
+                Clicked="next_Clicked"
+                AbsoluteLayout.LayoutBounds="0.95, 0.05, 0.2, 0.2"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Black"
+                TextColor="White"
+                HeightRequest="100"/>
+        <Image x:Name="image"
+               AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.5, 0.5"
+               AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
+</ContentPage>

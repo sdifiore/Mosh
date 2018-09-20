@@ -11,7 +11,7 @@ namespace Mosh
         {
             InitializeComponent();
 
-            MainPage = new ImageCircle();
+            MainPage = new SearchBar();
         }
 
         protected override void OnStart()
